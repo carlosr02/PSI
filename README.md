@@ -3,6 +3,8 @@ Carlos Romero Bacurau de Brito (carlosr02), 20141011110255
 
 <h3>TODO</h3>
 
+* Product Backlog + Funcionalidades que serão implementadas na 1ª Sprint
+
 <h3>Cronograma</h3>
 
 1. Utilizando o SCRUM como modelo de desenvolvimento de software, defini-se:
