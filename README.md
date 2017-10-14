@@ -5,33 +5,33 @@ Carlos Romero Bacurau de Brito (carlosr02), 20141011110255
 
 <h3>Cronograma</h3>
 
-Utilizando o SCRUM como modelo de desenvolvimento de software, defini-se:
-O Product Backlog, contendo:
-As tecnologias de desenvolvimento de software que serão utilizadas:
-Linguagem de Programação: ASP.Net;
-Banco de Dados: SQL Server;
-Outras ferramentas: Astah UML, MySql Workbench, GitHub;
-Funcionalidades do sistema.
-Cadastro de Clientes
-Cadastro de Funcionário
-Pagamentos de Salário de Funcionários
-Cadastro de Fornecedores
-Cadastro de Compras
-Cadastro de Vendas
-Cadastro de Produtos
-Relatório de Vendas
-Relatório de Compras
-Sprint-1
-Funcionalidades:
-Cadastro de Clientes
-Cadastro de Produtos
-Revisão da Sprint-1 (08/NOV/2017)
-Sprint-2
-Funcionalidades:
-Cadastro de Funcionário
-Cadastro de Fornecedor
-Pagamento de Salário de Funcionários
-Revisão da Sprint-2 (??/???/2017)
+1. Utilizando o SCRUM como modelo de desenvolvimento de software, defini-se:
+   1. O Product Backlog, contendo:
+      1. As tecnologias de desenvolvimento de software que serão utilizadas:
+         1. Linguagem de Programação: ASP.Net;
+         1. Banco de Dados: SQL Server;
+         1. Outras ferramentas: Astah UML, MySql Workbench, GitHub;
+      1. Funcionalidades do sistema.
+         1. Cadastro de Clientes
+         1. Cadastro de Funcionário
+         1. Pagamentos de Salário de Funcionários
+         1. Cadastro de Fornecedores
+         1. Cadastro de Compras
+         1. Cadastro de Vendas
+         1. Cadastro de Produtos
+         1. Relatório de Vendas
+         1. Relatório de Compras
+1. Sprint-1
+   1. Funcionalidades:
+      1. Cadastro de Clientes
+      1. Cadastro de Produtos
+1. Revisão da Sprint-1 (08/NOV/2017)
+1. Sprint-2
+   1. Funcionalidades:
+      1. Cadastro de Funcionário
+      1. Cadastro de Fornecedor
+      1. Pagamento de Salário de Funcionários
+1. Revisão da Sprint-2 (??/???/2017)
 
 <h3>Softwares de apoio</h3>
 
