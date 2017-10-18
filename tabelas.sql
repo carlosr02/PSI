@@ -1,6 +1,6 @@
 create table Cliente(
-	codigo int,
-	nome varchar(50),
+	codigo int identity(1,1),
+	nome varchar(50) not null,
 	telefones varchar(30),
 	cidade varchar(50),
 	estado varchar(50),
@@ -11,8 +11,8 @@ create table Cliente(
 )
 
 create table Fornecedor(
-	codigo int,
-	nome varchar(50),
+	codigo int identity(1,1),
+	nome varchar(50) not null,
 	telefones varchar(30),
 	cidade varchar(50),
 	estado varchar(50),
@@ -22,13 +22,13 @@ create table Fornecedor(
 )
 
 create table Produto(
-	codigo int,
-	decricao varchar(50),
+	codigo int identity(1,1),
+	decricao varchar(50) not null,
 	primary key(codigo)
 )
 
 create table Venda(
-	codigo int,
+	codigo int identity(1,1),
 	data date,
 	desconto float,
 	valorTotal float,
@@ -38,7 +38,7 @@ create table Venda(
 )
 
 create table ItemVenda(
-	codigo int,
+	codigo int identity(1,1),
 	peso float,
 	preco_kg float,
 	valoTotal float,
@@ -50,7 +50,7 @@ create table ItemVenda(
 )
 
 create table Compra(
-	codigo int,
+	codigo int identity(1,1),
 	data date,
 	desconto float,
 	valorTotal float,
@@ -60,7 +60,7 @@ create table Compra(
 )
 
 create table ItemCompra(
-	codigo int,
+	codigo int identity(1,1),
 	unidade varchar(2),
 	quantidade float,
 	precoUnitario float,
@@ -73,7 +73,7 @@ create table ItemCompra(
 )
 
 create table Funcionario(
-	codigo int,
+	codigo int identity(1,1),
 	nome varchar(50),
 	telefones varchar(30),
 	identidade varchar(9),
@@ -86,7 +86,7 @@ create table Funcionario(
 )
 
 create table PagamentoSalario(
-	codigo int,
+	codigo int identity(1,1),
 	data date,
 	mesReferente int,
 	anoReferente int,
