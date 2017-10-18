@@ -12,7 +12,7 @@ Carlos Romero Bacurau de Brito (carlosr02), 20141011110255
       1. As tecnologias de desenvolvimento de software que serão utilizadas:
          1. Linguagem de Programação: ASP.Net;
          1. Banco de Dados: SQL Server;
-         1. Outras ferramentas: Astah UML, MySql Workbench, GitHub;
+         1. Outras ferramentas: Astah UML, MySql Workbench, GitHub, Bootstrap;
       1. Funcionalidades do sistema.
          1. Cadastro de Clientes
          1. Cadastro de Funcionário
