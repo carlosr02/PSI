@@ -27,13 +27,13 @@ Carlos Romero Bacurau de Brito (carlosr02), 20141011110255
    1. Funcionalidades:
       1. Cadastro de Clientes
       1. Cadastro de Produtos
-1. Revisão da Sprint-1 (08/NOV/2017)
+1. Revisão da Sprint-1 (29/NOV/2017)
 1. Sprint-2
    1. Funcionalidades:
       1. Cadastro de Funcionário
       1. Cadastro de Fornecedor
       1. Pagamento de Salário de Funcionários
-1. Revisão da Sprint-2 (??/???/2017)
+1. Revisão da Sprint-2 (20/DEZ/2017)
 
 <h3>Softwares de apoio</h3>
 
