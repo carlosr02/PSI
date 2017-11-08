@@ -23,13 +23,13 @@ namespace PSI.DAL
         {
             Modelo.Produto aProduto;
             List<Modelo.Produto> aListProduto = new List<Modelo.Produto>();
-            
+
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "Select * from Produto";
-            
+
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
@@ -48,11 +48,9 @@ namespace PSI.DAL
         }
 
         [DataObjectMethod(DataObjectMethodType.Select)]
-        public List<Modelo.Produto> Select(int codigo)
+        public Modelo.Produto Select(int codigo)
         {
-
             Modelo.Produto aProduto;
-            List<Modelo.Produto> aListProduto = new List<Modelo.Produto>();
 
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
@@ -61,21 +59,15 @@ namespace PSI.DAL
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
             SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                while (dr.Read())
-                {
-                    aProduto = new Modelo.Produto(
+            dr.Read();
+            aProduto = new Modelo.Produto(
                         Convert.ToInt32(dr[0]),
                         dr[1] as string
                         );
-                    aListProduto.Add(aProduto);
-                }
-            }
             dr.Close();
             conn.Close();
 
-            return aListProduto;
+            return aProduto;
         }
 
         [DataObjectMethod(DataObjectMethodType.Delete)]

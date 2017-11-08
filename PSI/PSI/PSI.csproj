@@ -65,6 +65,7 @@
     <Content Include="Visao\CadastroProduto\Excluir.aspx" />
     <Content Include="Visao\CadastroProduto\Incluir.aspx" />
     <Content Include="Visao\CadastroProduto\Index.aspx" />
+    <Content Include="Visao\Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +128,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Visao\CadastroProduto\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

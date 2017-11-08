@@ -13,5 +13,26 @@ namespace PSI.Visao.CadastroProduto
         {
 
         }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Alterar")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+
+                int codigo = Convert.ToInt32(GridView1.DataKeys[index].Value.ToString());
+
+                Response.Redirect("Alterar.aspx?codigo=" + codigo);
+            }
+
+            if (e.CommandName == "Excluir")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+
+                int codigo = Convert.ToInt32(GridView1.DataKeys[index].Value.ToString());
+
+                Response.Redirect("Excluir.aspx?codigo=" + codigo);
+            }
+        }
     }
 }

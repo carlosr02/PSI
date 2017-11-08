@@ -23,13 +23,13 @@ namespace PSI.DAL
         {
             Modelo.Cliente aCliente;
             List<Modelo.Cliente> aListCliente = new List<Modelo.Cliente>();
-            
+
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "Select * from Cliente";
-            
+
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
@@ -54,11 +54,9 @@ namespace PSI.DAL
         }
 
         [DataObjectMethod(DataObjectMethodType.Select)]
-        public List<Modelo.Cliente> Select(int codigo)
+        public Modelo.Cliente Select(int codigo)
         {
-
             Modelo.Cliente aCliente;
-            List<Modelo.Cliente> aListCliente = new List<Modelo.Cliente>();
 
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
@@ -67,27 +65,23 @@ namespace PSI.DAL
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
             SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                while (dr.Read())
-                {
-                    aCliente = new Modelo.Cliente(
-                        Convert.ToInt32(dr[0]),
-                        dr[1] as string,
-                        dr[2] as string,
-                        dr[3] as string,
-                        dr[4] as string,
-                        dr[5] as string,
-                        dr[6] as string,
-                        dr[7] as string
-                        );
-                    aListCliente.Add(aCliente);
-                }
-            }
+
+            dr.Read();
+            aCliente = new Modelo.Cliente(
+                Convert.ToInt32(dr[0]),
+                dr[1] as string,
+                dr[2] as string,
+                dr[3] as string,
+                dr[4] as string,
+                dr[5] as string,
+                dr[6] as string,
+                dr[7] as string
+                );
+
             dr.Close();
             conn.Close();
 
-            return aListCliente;
+            return aCliente;
         }
 
         [DataObjectMethod(DataObjectMethodType.Delete)]
