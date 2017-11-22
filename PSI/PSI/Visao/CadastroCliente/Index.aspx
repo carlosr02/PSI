@@ -1,15 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PSI.Visao.Index" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <h2>Cadastro de Clientes</h2>
+﻿<%@ Page Title="Index - Cadastro de Clientes" Language="C#" MasterPageFile="~/Visao/MasterPage.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PSI.Visao.CadastroCliente.WebForm1" Theme="css" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>Cadastro de Clientes</h2>
         <asp:Button ID="Button1" runat="server" Text="Incluir" PostBackUrl="~/Visao/CadastroCliente/Incluir.aspx" /><br /><br />
         <asp:GridView ID="GridView1" runat="server" DataSourceID="ObjectDataSource1" AutoGenerateColumns="False" DataKeyNames="Codigo" OnRowCommand="GridView1_RowCommand">
             <Columns>
@@ -32,7 +25,4 @@
         </asp:ObjectDataSource>
 
         <br /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Visao/Index.aspx">Voltar</asp:HyperLink>
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -1,15 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Excluir.aspx.cs" Inherits="PSI.Visao.CadastroCliente.Excluir" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <h2>Exclusão de Cliente</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Visao/MasterPage.Master" AutoEventWireup="true" CodeBehind="Excluir.aspx.cs" Inherits="PSI.Visao.CadastroCliente.WebForm4" Theme="css" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>Exclusão de Cliente</h2>
         <table>
             <tr>
                 <td><asp:Label ID="Label1" runat="server" Text="Código:"></asp:Label></td>
@@ -49,6 +42,4 @@
             </tr>
         </table>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PSI.Visao.CadastroCliente
 {
-    public partial class Alterar : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         DAL.DALCliente DALCliente = new DAL.DALCliente();
         Modelo.Cliente Cliente;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Cliente = DALCliente.Select(Convert.ToInt32(Request["codigo"]));

@@ -57,15 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\css\main.css" />
+    <Content Include="Visao\CadastroCliente\Index.aspx" />
+    <Content Include="Visao\CadastroCliente\Incluir.aspx" />
     <Content Include="Visao\CadastroCliente\Alterar.aspx" />
     <Content Include="Visao\CadastroCliente\Excluir.aspx" />
-    <Content Include="Visao\CadastroCliente\Incluir.aspx" />
-    <Content Include="Visao\CadastroCliente\Index.aspx" />
     <Content Include="Visao\CadastroProduto\Alterar.aspx" />
     <Content Include="Visao\CadastroProduto\Excluir.aspx" />
     <Content Include="Visao\CadastroProduto\Incluir.aspx" />
     <Content Include="Visao\CadastroProduto\Index.aspx" />
     <Content Include="Visao\Index.aspx" />
+    <Content Include="Visao\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +76,20 @@
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visao\CadastroCliente\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroCliente\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\CadastroCliente\Incluir.aspx.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroCliente\Incluir.aspx.designer.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Visao\CadastroCliente\Alterar.aspx.cs">
       <DependentUpon>Alterar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -87,20 +103,6 @@
     </Compile>
     <Compile Include="Visao\CadastroCliente\Excluir.aspx.designer.cs">
       <DependentUpon>Excluir.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Visao\CadastroCliente\Incluir.aspx.cs">
-      <DependentUpon>Incluir.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Visao\CadastroCliente\Incluir.aspx.designer.cs">
-      <DependentUpon>Incluir.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Visao\CadastroCliente\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Visao\CadastroCliente\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Visao\CadastroProduto\Alterar.aspx.cs">
       <DependentUpon>Alterar.aspx</DependentUpon>
@@ -137,8 +139,23 @@
     <Compile Include="Visao\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Visao\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Visao\MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,6 +163,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

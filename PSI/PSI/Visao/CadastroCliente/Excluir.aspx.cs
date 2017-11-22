@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PSI.Visao.CadastroCliente
 {
-    public partial class Excluir : System.Web.UI.Page
+    public partial class WebForm4 : System.Web.UI.Page
     {
         DAL.DALCliente DALCliente = new DAL.DALCliente();
         Modelo.Cliente Cliente;

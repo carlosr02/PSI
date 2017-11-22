@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PSI.Visao.CadastroCliente
 {
-    public partial class Incluir : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         DAL.DALCliente DALCliente = new DAL.DALCliente();
         Modelo.Cliente Cliente;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,7 +28,7 @@ namespace PSI.Visao.CadastroCliente
             string email = TextBox7.Text;
 
             Cliente = new Modelo.Cliente(0, nome, telefones, cidade, estado, endereco, cpf_cnpj, email);
-            
+
             DALCliente.Insert(Cliente);
 
             Response.Redirect("Index.aspx");

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PSI.Visao
+namespace PSI.Visao.CadastroCliente
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +24,7 @@ namespace PSI.Visao
 
                 Response.Redirect("Alterar.aspx?codigo=" + codigo);
             }
-            
+
             if (e.CommandName == "Excluir")
             {
                 int index = Convert.ToInt32(e.CommandArgument);
