@@ -23,7 +23,7 @@ create table Fornecedor(
 
 create table Produto(
 	codigo int identity(1,1),
-	decricao varchar(50) not null,
+	descricao varchar(50) not null,
 	primary key(codigo)
 )
 
