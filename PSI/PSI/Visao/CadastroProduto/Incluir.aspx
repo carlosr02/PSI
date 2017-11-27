@@ -1,15 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Incluir.aspx.cs" Inherits="PSI.Visao.CadastroProduto.Incluir" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <h2>Inclusão de Produto</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Visao/MasterPage.Master" AutoEventWireup="true" CodeBehind="Incluir.aspx.cs" Inherits="PSI.Visao.CadastroProduto.WebForm2" Theme="css" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>Inclusão de Produto</h2>
         <table>
             <tr>
                 <td>
@@ -23,7 +16,4 @@
                 <td><asp:Button ID="Button2" runat="server" Text="Cancelar" OnClick="Button2_Click" CausesValidation="False" /></td>
             </tr>
         </table>
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>

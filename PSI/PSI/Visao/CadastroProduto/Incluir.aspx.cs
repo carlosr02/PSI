@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PSI.Visao.CadastroProduto
 {
-    public partial class Incluir : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         DAL.DALProduto DALProduto = new DAL.DALProduto();
         Modelo.Produto Produto;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +24,7 @@ namespace PSI.Visao.CadastroProduto
             Produto = new Modelo.Produto(0, descricao);
 
             DALProduto.Insert(Produto);
-            
+
             Response.Redirect("Index.aspx");
         }
 

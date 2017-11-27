@@ -3,3 +3,8 @@ C:\Users\20141011110255\Documents\PSI\PSI\PSI\bin\PSI.pdb
 C:\Users\20141011110255\Documents\PSI\PSI\PSI\obj\Debug\PSI.csprojResolveAssemblyReference.cache
 C:\Users\20141011110255\Documents\PSI\PSI\PSI\obj\Debug\PSI.dll
 C:\Users\20141011110255\Documents\PSI\PSI\PSI\obj\Debug\PSI.pdb
+C:\Users\Carlos Romero\Documents\IFRN 2017\Projeto de Desenvolvimento de Sistemas para Internet\PSI\PSI\PSI\bin\PSI.dll
+C:\Users\Carlos Romero\Documents\IFRN 2017\Projeto de Desenvolvimento de Sistemas para Internet\PSI\PSI\PSI\bin\PSI.pdb
+C:\Users\Carlos Romero\Documents\IFRN 2017\Projeto de Desenvolvimento de Sistemas para Internet\PSI\PSI\PSI\obj\Debug\PSI.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Romero\Documents\IFRN 2017\Projeto de Desenvolvimento de Sistemas para Internet\PSI\PSI\PSI\obj\Debug\PSI.dll
+C:\Users\Carlos Romero\Documents\IFRN 2017\Projeto de Desenvolvimento de Sistemas para Internet\PSI\PSI\PSI\obj\Debug\PSI.pdb

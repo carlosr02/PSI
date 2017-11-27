@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PSI.Visao.CadastroProduto
 {
-    public partial class Alterar : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         DAL.DALProduto DALProduto = new DAL.DALProduto();
         Modelo.Produto Produto;

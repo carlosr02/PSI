@@ -4,7 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <title>PSI</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -22,18 +26,18 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="./">PSI</a>
+                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="navbar-brand" NavigateUrl="~/Visao/Index.aspx">PSI</asp:HyperLink>
                             </div>
                             <div class="collapse navbar-collapse">
                                 <ul class="nav navbar-nav">
-                                    <li class="active">
+                                    <li runat="server" ID="li1" class="">
                                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Visao/CadastroCliente/Index.aspx">Cadastro de Cliente</asp:HyperLink>
                                     </li>
-                                    <li class="">
+                                    <li runat="server" ID="li2" class="">
                                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produto</asp:HyperLink>
                                     </li>
                                 </ul>
-                                <p class="navbar-text">Made by <a href="http://www.samrayner.com">Sam Rayner</a></p>
+                                <!--<p class="navbar-text">Made by <a href="http://www.samrayner.com">Sam Rayner</a></p>-->
                             </div>
                         </div>
                     </nav>
