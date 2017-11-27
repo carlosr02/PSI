@@ -67,7 +67,9 @@
     <Content Include="Visao\CadastroProduto\Alterar.aspx" />
     <Content Include="Visao\CadastroProduto\Excluir.aspx" />
     <Content Include="Visao\Index.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\DALCliente.cs" />

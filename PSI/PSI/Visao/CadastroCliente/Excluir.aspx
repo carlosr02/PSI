@@ -13,7 +13,7 @@
                 <td><asp:Label ID="Label4" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label5" runat="server" Text="Telefones:"></asp:Label></td>
+                <td><asp:Label ID="Label5" runat="server" Text="Telefone(s):"></asp:Label></td>
                 <td><asp:Label ID="Label6" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>
@@ -29,7 +29,7 @@
                 <td><asp:Label ID="Label12" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label13" runat="server" Text="CPF:"></asp:Label></td>
+                <td><asp:Label ID="Label13" runat="server" Text="CPF/CNPJ:"></asp:Label></td>
                 <td><asp:Label ID="Label14" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>

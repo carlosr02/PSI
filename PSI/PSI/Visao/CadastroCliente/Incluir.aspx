@@ -12,7 +12,7 @@
                 <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label2" runat="server" Text="Telefones"></asp:Label></td>
+                <td><asp:Label ID="Label2" runat="server" Text="Telefone(s)"></asp:Label></td>
                 <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
@@ -28,7 +28,7 @@
                 <td><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label6" runat="server" Text="CPF"></asp:Label></td>
+                <td><asp:Label ID="Label6" runat="server" Text="CPF"></asp:Label>/CNPJ</td>
                 <td><asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>

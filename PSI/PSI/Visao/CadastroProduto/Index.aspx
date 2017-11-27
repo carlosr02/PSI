@@ -8,8 +8,8 @@
     <br />
     <asp:GridView ID="GridView1" runat="server" DataSourceID="ObjectDataSource1" AutoGenerateColumns="False" DataKeyNames="Codigo" OnRowCommand="GridView1_RowCommand">
         <Columns>
-            <asp:BoundField DataField="Codigo" HeaderText="Codigo" ReadOnly="True" SortExpression="Codigo"></asp:BoundField>
-            <asp:BoundField DataField="Descricao" HeaderText="Descricao" SortExpression="Descricao"></asp:BoundField>
+            <asp:BoundField DataField="Codigo" HeaderText="Código" ReadOnly="True" SortExpression="Codigo"></asp:BoundField>
+            <asp:BoundField DataField="Descricao" HeaderText="Descrição" SortExpression="Descricao"></asp:BoundField>
             <asp:ButtonField CommandName="Alterar" Text="Alterar" />
             <asp:ButtonField CommandName="Excluir" Text="Excluir" />
         </Columns>
