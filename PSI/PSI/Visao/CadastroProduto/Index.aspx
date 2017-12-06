@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Visao/MasterPage.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PSI.Visao.CadastroProduto.WebForm1" Theme="css" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,7 +18,4 @@
             <asp:Parameter Name="codigo" Type="Int32"></asp:Parameter>
         </DeleteParameters>
     </asp:ObjectDataSource>
-
-    <br />
-    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Visao/Index.aspx">Voltar</asp:HyperLink>
 </asp:Content>

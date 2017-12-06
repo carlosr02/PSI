@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PSI.Visao.CadastroCliente {
+namespace PSI.Visao.CadastroFornecedor {
     
     
-    public partial class WebForm1 {
+    public partial class Index {
         
         /// <summary>
         /// Button1 control.

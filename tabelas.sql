@@ -16,6 +16,7 @@ create table Fornecedor(
 	telefones varchar(30),
 	cidade varchar(50),
 	estado varchar(50),
+	endereco varchar(85),
 	cpf_cnpj varchar(14),
 	email varchar(320),
 	primary key(codigo)

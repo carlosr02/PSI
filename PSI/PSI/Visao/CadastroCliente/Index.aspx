@@ -23,6 +23,4 @@
                 <asp:Parameter Name="codigo" Type="Int32" />
             </DeleteParameters>
         </asp:ObjectDataSource>
-
-        <br /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Visao/Index.aspx">Voltar</asp:HyperLink>
 </asp:Content>

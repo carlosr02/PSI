@@ -36,6 +36,9 @@
                                     <li runat="server" ID="li2" class="">
                                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produto</asp:HyperLink>
                                     </li>
+                                    <li runat="server" ID="li3" class="">
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Visao/CadastroFornecedor/Index.aspx">Cadastro de Fornecedor</asp:HyperLink>
+                                    </li>
                                 </ul>
                                 <!--<p class="navbar-text">Made by <a href="http://www.samrayner.com">Sam Rayner</a></p>-->
                             </div>
