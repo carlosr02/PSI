@@ -26,19 +26,22 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="navbar-brand" NavigateUrl="~/Visao/Index.aspx">PSI</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="navbar-brand" NavigateUrl="~/Visao/Index.aspx">PSI</asp:HyperLink>
                             </div>
                             <div class="collapse navbar-collapse">
                                 <ul class="nav navbar-nav">
                                     <li runat="server" ID="li1" class="">
-                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Visao/CadastroCliente/Index.aspx">Cadastro de Cliente</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Visao/CadastroCliente/Index.aspx">Cadastro de Clientes</asp:HyperLink>
                                     </li>
                                     <li runat="server" ID="li2" class="">
-                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produto</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Visao/CadastroFuncionario/Index.aspx">Cadastro de Funcionário</asp:HyperLink>
                                     </li>
                                     <li runat="server" ID="li3" class="">
-                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Visao/CadastroFornecedor/Index.aspx">Cadastro de Fornecedor</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Visao/CadastroFornecedor/Index.aspx">Cadastro de Fornecedores</asp:HyperLink>
                                     </li>
+                                    <li runat="server" ID="li4" class="">
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produtos</asp:HyperLink>
+                                    </li> 
                                 </ul>
                                 <!--<p class="navbar-text">Made by <a href="http://www.samrayner.com">Sam Rayner</a></p>-->
                             </div>

@@ -18,9 +18,6 @@
                 <asp:ButtonField CommandName="Excluir" Text="Excluir" />
             </Columns>
         </asp:GridView>
-        <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" SelectMethod="SelectAll" TypeName="PSI.DAL.DALCliente" DataObjectTypeName="PSI.Modelo.Cliente" DeleteMethod="Delete" UpdateMethod="Update">
-            <DeleteParameters>
-                <asp:Parameter Name="codigo" Type="Int32" />
-            </DeleteParameters>
+        <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" SelectMethod="SelectAll" TypeName="PSI.DAL.DALCliente" DataObjectTypeName="PSI.Modelo.Cliente">
         </asp:ObjectDataSource>
 </asp:Content>

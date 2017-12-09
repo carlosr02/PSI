@@ -66,6 +66,10 @@
     <Content Include="Visao\CadastroFornecedor\Excluir.aspx" />
     <Content Include="Visao\CadastroFornecedor\Incluir.aspx" />
     <Content Include="Visao\CadastroFornecedor\Index.aspx" />
+    <Content Include="Visao\CadastroFuncionario\Alterar.aspx" />
+    <Content Include="Visao\CadastroFuncionario\Excluir.aspx" />
+    <Content Include="Visao\CadastroFuncionario\Incluir.aspx" />
+    <Content Include="Visao\CadastroFuncionario\Index.aspx" />
     <Content Include="Visao\CadastroProduto\Index.aspx" />
     <Content Include="Visao\CadastroProduto\Incluir.aspx" />
     <Content Include="Visao\CadastroProduto\Alterar.aspx" />
@@ -141,6 +145,34 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Visao\CadastroFornecedor\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Alterar.aspx.cs">
+      <DependentUpon>Alterar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Alterar.aspx.designer.cs">
+      <DependentUpon>Alterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Excluir.aspx.cs">
+      <DependentUpon>Excluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Excluir.aspx.designer.cs">
+      <DependentUpon>Excluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Incluir.aspx.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Incluir.aspx.designer.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\CadastroFuncionario\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Visao\CadastroProduto\Index.aspx.cs">

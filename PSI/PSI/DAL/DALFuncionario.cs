@@ -41,7 +41,7 @@ namespace PSI.DAL
                         dr[2] as string,
                         dr[3] as string,
                         dr[4] as string,
-                        Convert.ToDouble(dr[5]),
+                        dr[5] as string,
                         Convert.ToBoolean(dr[6]),
                         Convert.ToBoolean(dr[7]),
                         dr[8] as string
@@ -73,7 +73,7 @@ namespace PSI.DAL
                         dr[2] as string,
                         dr[3] as string,
                         dr[4] as string,
-                        Convert.ToDouble(dr[5]),
+                        dr[5] as string,
                         Convert.ToBoolean(dr[6]),
                         Convert.ToBoolean(dr[7]),
                         dr[8] as string

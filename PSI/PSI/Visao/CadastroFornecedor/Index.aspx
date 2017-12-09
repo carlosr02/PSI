@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Cadastro de Fornecedor</h2>
+    <h2>Cadastro de Fornecedores</h2>
     <asp:Button ID="Button1" runat="server" Text="Incluir" PostBackUrl="~/Visao/CadastroFornecedor/Incluir.aspx" /><br />
     <br />
     <asp:GridView ID="GridView1" runat="server" DataSourceID="ObjectDataSource1" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" DataKeyNames="Codigo">
@@ -19,9 +19,6 @@
             <asp:ButtonField CommandName="Excluir" Text="Excluir" />
         </Columns>
     </asp:GridView>
-    <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" DeleteMethod="Delete" SelectMethod="SelectAll" TypeName="PSI.DAL.DALFornecedor">
-        <DeleteParameters>
-            <asp:Parameter Name="codigo" Type="Int32"></asp:Parameter>
-        </DeleteParameters>
+    <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" SelectMethod="SelectAll" TypeName="PSI.DAL.DALFornecedor">
     </asp:ObjectDataSource>
 </asp:Content>

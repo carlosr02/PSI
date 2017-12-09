@@ -41,9 +41,9 @@ namespace PSI.Modelo
             get { return clt; }
             set { clt = value; }
         }
-        private double salario;
+        private string salario;
 
-        public double Salario
+        public string Salario
         {
             get { return salario; }
             set { salario = value; }
@@ -70,7 +70,7 @@ namespace PSI.Modelo
             set { observacao = value; }
         }
 
-        public Funcionario(int codigo, string nome, string telefones, string identidade, string clt, double salario, bool motorista, bool tecnico, string observacao)
+        public Funcionario(int codigo, string nome, string telefones, string identidade, string clt, string salario, bool motorista, bool tecnico, string observacao)
         {
             this.codigo = codigo;
             this.nome = nome;
