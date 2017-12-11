@@ -45,7 +45,7 @@ namespace PSI.Visao.CadastroPagamentoSalario
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect(String.Format("Incluir.aspx?funcionario={0}&mes={1}&ano={2}", DropDownList1.SelectedValue, DropDownList2.SelectedValue, DropDownList3.SelectedValue));
+            Response.Redirect(String.Format("Incluir.aspx?funcionario={0}&mes={1}&ano={2}&debito={3}", DropDownList1.SelectedValue, DropDownList2.SelectedValue, DropDownList3.SelectedValue, Label3.Text));
         }
 
         protected void Button2_Click(object sender, EventArgs e)

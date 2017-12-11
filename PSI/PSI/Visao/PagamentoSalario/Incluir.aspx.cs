@@ -36,6 +36,8 @@ namespace PSI.Visao.CadastroPagamentoSalario
                 DropDownList3.Items.Add((ano - 3).ToString());
                 DropDownList3.Items.Add((ano - 4).ToString());
                 DropDownList3.SelectedValue = Request.QueryString["ano"];
+
+                TextBox4.Text = Request.QueryString["debito"];
             }
         }
 
