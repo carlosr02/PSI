@@ -47,6 +47,12 @@ namespace PSI.Modelo
         {
             get { return funcionario_codigo; }
         }
+        private string funcionario_nome;
+
+        public string Funcionario_nome
+        {
+            get { return funcionario_nome; }
+        }
 
         public PagamentoSalario(int codigo, DateTime data, int mesReferente, int anoReferente, double valorPago, int funcionario_codigo)
         {
@@ -56,6 +62,17 @@ namespace PSI.Modelo
             this.anoReferente = anoReferente;
             this.valorPago = valorPago;
             this.funcionario_codigo = funcionario_codigo;
+        }
+
+        public PagamentoSalario(int codigo, DateTime data, int mesReferente, int anoReferente, double valorPago, int funcionario_codigo, string funcionario_nome)
+        {
+            this.codigo = codigo;
+            this.data = data;
+            this.mesReferente = mesReferente;
+            this.anoReferente = anoReferente;
+            this.valorPago = valorPago;
+            this.funcionario_codigo = funcionario_codigo;
+            this.funcionario_nome = funcionario_nome;
         }
     }
 }

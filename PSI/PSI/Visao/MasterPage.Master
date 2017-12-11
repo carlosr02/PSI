@@ -37,10 +37,13 @@
                                         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Visao/CadastroFuncionario/Index.aspx">Cadastro de Funcionário</asp:HyperLink>
                                     </li>
                                     <li runat="server" ID="li3" class="">
-                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Visao/CadastroFornecedor/Index.aspx">Cadastro de Fornecedores</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Visao/PagamentoSalario/Index.aspx">Pagamento de Salário de Funcionários</asp:HyperLink>
                                     </li>
                                     <li runat="server" ID="li4" class="">
-                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produtos</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Visao/CadastroFornecedor/Index.aspx">Cadastro de Fornecedores</asp:HyperLink>
+                                    </li>
+                                    <li runat="server" ID="li5" class="">
+                                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Visao/CadastroProduto/Index.aspx">Cadastro de Produtos</asp:HyperLink>
                                     </li> 
                                 </ul>
                                 <!--<p class="navbar-text">Made by <a href="http://www.samrayner.com">Sam Rayner</a></p>-->

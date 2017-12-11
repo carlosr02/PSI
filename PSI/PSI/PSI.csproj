@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.17.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -70,6 +74,10 @@
     <Content Include="Visao\CadastroFuncionario\Excluir.aspx" />
     <Content Include="Visao\CadastroFuncionario\Incluir.aspx" />
     <Content Include="Visao\CadastroFuncionario\Index.aspx" />
+    <Content Include="Visao\PagamentoSalario\Alterar.aspx" />
+    <Content Include="Visao\PagamentoSalario\Excluir.aspx" />
+    <Content Include="Visao\PagamentoSalario\Incluir.aspx" />
+    <Content Include="Visao\PagamentoSalario\Index.aspx" />
     <Content Include="Visao\CadastroProduto\Index.aspx" />
     <Content Include="Visao\CadastroProduto\Incluir.aspx" />
     <Content Include="Visao\CadastroProduto\Alterar.aspx" />
@@ -175,6 +183,34 @@
     <Compile Include="Visao\CadastroFuncionario\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Visao\PagamentoSalario\Alterar.aspx.cs">
+      <DependentUpon>Alterar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Alterar.aspx.designer.cs">
+      <DependentUpon>Alterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Excluir.aspx.cs">
+      <DependentUpon>Excluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Excluir.aspx.designer.cs">
+      <DependentUpon>Excluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Incluir.aspx.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Incluir.aspx.designer.cs">
+      <DependentUpon>Incluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visao\PagamentoSalario\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Visao\CadastroProduto\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Visao\MasterPage.Master" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -10,11 +10,11 @@
             <asp:BoundField DataField="Codigo" HeaderText="Código" SortExpression="Codigo" ReadOnly="True"></asp:BoundField>
             <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome"></asp:BoundField>
             <asp:BoundField DataField="Telefones" HeaderText="Telefones" SortExpression="Telefones"></asp:BoundField>
+            <asp:CheckBoxField DataField="Motorista" HeaderText="Motorista" SortExpression="Motorista" ItemStyle-HorizontalAlign="Center"></asp:CheckBoxField>
+            <asp:CheckBoxField DataField="Tecnico" HeaderText="Técnico" SortExpression="Tecnico" ItemStyle-HorizontalAlign="Center"></asp:CheckBoxField>
             <asp:BoundField DataField="Identidade" HeaderText="Identidade" SortExpression="Identidade"></asp:BoundField>
             <asp:BoundField DataField="Clt" HeaderText="CLT" SortExpression="Clt"></asp:BoundField>
             <asp:BoundField DataField="Salario" HeaderText="Salário" SortExpression="Salario"></asp:BoundField>
-            <asp:CheckBoxField DataField="Motorista" HeaderText="Motorista" SortExpression="Motorista"></asp:CheckBoxField>
-            <asp:CheckBoxField DataField="Tecnico" HeaderText="Técnico" SortExpression="Tecnico"></asp:CheckBoxField>
             <asp:BoundField DataField="Observacao" HeaderText="Observação" SortExpression="Observacao"></asp:BoundField>
             <asp:ButtonField CommandName="Alterar" Text="Alterar" />
             <asp:ButtonField CommandName="Excluir" Text="Excluir" />

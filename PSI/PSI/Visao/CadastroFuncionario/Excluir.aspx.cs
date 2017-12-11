@@ -21,8 +21,10 @@ namespace PSI.Visao.CadastroFuncionario
             Label8.Text = Funcionario.Identidade;
             Label10.Text = Funcionario.Clt;
             Label12.Text = Funcionario.Salario;
-            Label14.Text = Funcionario.Motorista.ToString();
-            Label16.Text = Funcionario.Tecnico.ToString();
+            if (Funcionario.Motorista == true) Label14.Text = "Sim";
+            else Label14.Text = "Não";
+            if (Funcionario.Tecnico == true) Label16.Text = "Sim";
+            else Label16.Text = "Não";
             Label18.Text = Funcionario.Observacao;
         }
 

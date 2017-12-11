@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td><asp:Label ID="Label2" runat="server" Text="Telefone(s)"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox2" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
                 <td><asp:Label ID="Label3" runat="server" Text="Cidade"></asp:Label></td>
@@ -32,7 +32,7 @@
                 <td><asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label7" runat="server" Text="Email"></asp:Label></td>
+                <td><asp:Label ID="Label7" runat="server" Text="E-mail"></asp:Label></td>
                 <td><asp:TextBox ID="TextBox7" runat="server" TextMode="Email"></asp:TextBox></td>
             </tr>
             <tr>

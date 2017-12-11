@@ -33,7 +33,7 @@
                 <td><asp:Label ID="Label14" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label15" runat="server" Text="Email:"></asp:Label></td>
+                <td><asp:Label ID="Label15" runat="server" Text="E-mail:"></asp:Label></td>
                 <td><asp:Label ID="Label16" runat="server" Text="" Font-Bold="True"></asp:Label></td>
             </tr>
             <tr>

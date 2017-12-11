@@ -13,8 +13,9 @@ namespace PSI.Visao
         {
             if (Request.Url.AbsolutePath.Contains("CadastroCliente")) li1.Attributes["class"] = "active";
             else if (Request.Url.AbsolutePath.Contains("CadastroFuncionario")) li2.Attributes["class"] = "active";
-            else if (Request.Url.AbsolutePath.Contains("CadastroFornecedor")) li3.Attributes["class"] = "active";
-            else if (Request.Url.AbsolutePath.Contains("CadastroProduto")) li4.Attributes["class"] = "active";
+            else if (Request.Url.AbsolutePath.Contains("PagamentoSalario")) li3.Attributes["class"] = "active";
+            else if (Request.Url.AbsolutePath.Contains("CadastroFornecedor")) li4.Attributes["class"] = "active";
+            else if (Request.Url.AbsolutePath.Contains("CadastroProduto")) li5.Attributes["class"] = "active";
         }
     }
 }

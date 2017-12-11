@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td><asp:Label ID="Label3" runat="server" Text="Telefone(s)"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
                 <td><asp:Label ID="Label4" runat="server" Text="Cidade"></asp:Label></td>
@@ -36,7 +36,7 @@
                 <td><asp:TextBox ID="TextBox7" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label8" runat="server" Text="Email"></asp:Label></td>
+                <td><asp:Label ID="Label8" runat="server" Text="E-mail"></asp:Label></td>
                 <td><asp:TextBox ID="TextBox8" runat="server" TextMode="Email"></asp:TextBox></td>
             </tr>
             <tr>

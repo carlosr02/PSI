@@ -17,18 +17,21 @@
             </tr>
             <tr>
                 <td><asp:Label ID="Label3" runat="server" Text="Telefone(s)"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
                 <td><asp:Label ID="Label4" runat="server" Text="Identidade"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox4" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
                 <td><asp:Label ID="Label5" runat="server" Text="Carteira de Trabalho"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox5" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Label ID="Label6" runat="server" Text="Salário"></asp:Label></td>
+                <td>
+                    <asp:Label ID="Label6" runat="server" Text="Salário"></asp:Label>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TextBox6">*</asp:RequiredFieldValidator>
+                </td>
                 <td><asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox></td>
             </tr>
             <tr>

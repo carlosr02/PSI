@@ -8,12 +8,12 @@
             <Columns>
                 <asp:BoundField DataField="Codigo" HeaderText="Código" ReadOnly="True" SortExpression="Codigo"></asp:BoundField>
                 <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome"></asp:BoundField>
-                <asp:BoundField DataField="Telefones" HeaderText="Telefone(s)" SortExpression="Telefones"></asp:BoundField>
+                <asp:BoundField DataField="Telefones" HeaderText="Telefones" SortExpression="Telefones"></asp:BoundField>
                 <asp:BoundField DataField="Cidade" HeaderText="Cidade" SortExpression="Cidade"></asp:BoundField>
                 <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"></asp:BoundField>
                 <asp:BoundField DataField="Endereco" HeaderText="Endereço" SortExpression="Endereco"></asp:BoundField>
                 <asp:BoundField DataField="Cpf_cnpj" HeaderText="CPF/CNPJ" SortExpression="Cpf_cnpj"></asp:BoundField>
-                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email"></asp:BoundField>
+                <asp:BoundField DataField="Email" HeaderText="E-mail" SortExpression="Email"></asp:BoundField>
                 <asp:ButtonField CommandName="Alterar" Text="Alterar" />
                 <asp:ButtonField CommandName="Excluir" Text="Excluir" />
             </Columns>

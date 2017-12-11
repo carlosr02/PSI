@@ -10,6 +10,25 @@ create table Cliente(
 	primary key(codigo)
 )
 
+create table Produto(
+	codigo int identity(1,1),
+	descricao varchar(50) not null,
+	primary key(codigo)
+)
+
+create table Funcionario(
+	codigo int identity(1,1),
+	nome varchar(50) not null,
+	telefones varchar(30),
+	identidade varchar(9),
+	clt varchar(16),
+	salario varchar(5) not null,
+	motorista bit,
+	tecnico bit,
+	observacao varchar(150),
+	primary key(codigo)
+)
+
 create table Fornecedor(
 	codigo int identity(1,1),
 	nome varchar(50) not null,
@@ -22,10 +41,15 @@ create table Fornecedor(
 	primary key(codigo)
 )
 
-create table Produto(
+create table PagamentoSalario(
 	codigo int identity(1,1),
-	descricao varchar(50) not null,
-	primary key(codigo)
+	data date not null,
+	mesReferente int not null,
+	anoReferente int not null,
+	valorPago float not null,
+	funcionario_codigo int not null,
+	primary key(codigo),
+	foreign key(funcionario_codigo) references Funcionario(codigo)
 )
 
 create table Venda(
@@ -71,28 +95,4 @@ create table ItemCompra(
 	primary key(codigo),
 	foreign key(compra_codigo) references Compra(codigo),
 	foreign key(produto_codigo) references Produto(codigo)
-)
-
-create table Funcionario(
-	codigo int identity(1,1),
-	nome varchar(50),
-	telefones varchar(30),
-	identidade varchar(9),
-	clt varchar(16),
-	salario float,
-	motorista bit,
-	tecnico bit,
-	observacao varchar(150),
-	primary key(codigo)
-)
-
-create table PagamentoSalario(
-	codigo int identity(1,1),
-	data date,
-	mesReferente int,
-	anoReferente int,
-	valorPago float,
-	funcionario_codigo int,
-	primary key(codigo),
-	foreign key(funcionario_codigo) references Funcionario(codigo)
 )
