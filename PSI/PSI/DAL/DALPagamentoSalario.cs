@@ -19,6 +19,41 @@ namespace PSI.DAL
         }
 
         [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<Modelo.PagamentoSalario> SelectByFuncionario(int funcionario_codigo)
+        {
+            Modelo.PagamentoSalario aPagamentoSalario;
+            List<Modelo.PagamentoSalario> aListPagamentoSalario = new List<Modelo.PagamentoSalario>();
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "select pg.codigo,pg.data,pg.mesReferente,pg.anoReferente,pg.valorPago,pg.funcionario_codigo,f.nome from PagamentoSalario pg inner join Funcionario f on f.codigo = pg.funcionario_codigo where pg.funcionario_codigo = @funcionario_codigo order by pg.data";
+            cmd.Parameters.Add("@funcionario_codigo", funcionario_codigo);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    aPagamentoSalario = new Modelo.PagamentoSalario(
+                        Convert.ToInt32(dr[0]),
+                        Convert.ToDateTime(dr[1]),
+                        Convert.ToInt32(dr[2]),
+                        Convert.ToInt32(dr[3]),
+                        Convert.ToDouble(dr[4]),
+                        Convert.ToInt32(dr[5]),
+                        dr[6] as string
+                        );
+                    aListPagamentoSalario.Add(aPagamentoSalario);
+                }
+            }
+            dr.Close();
+            conn.Close();
+            return aListPagamentoSalario;
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
         public List<Modelo.PagamentoSalario> SelectByFuncionarioEMesEAno(int funcionario_codigo, int mesReferente, int anoReferente)
         {
             Modelo.PagamentoSalario aPagamentoSalario;

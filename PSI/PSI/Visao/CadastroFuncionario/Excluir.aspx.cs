@@ -30,6 +30,14 @@ namespace PSI.Visao.CadastroFuncionario
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            DAL.DALPagamentoSalario DALPagamentoSalario = new DAL.DALPagamentoSalario();
+
+            foreach(Modelo.PagamentoSalario Pagamento 
+                in DALPagamentoSalario.SelectByFuncionario(Convert.ToInt32(Request["codigo"])))
+            {
+                DALPagamentoSalario.Delete(Pagamento.Codigo);
+            }
+
             DALFuncionario.Delete(Convert.ToInt32(Request["codigo"]));
             Response.Redirect("Index.aspx");
         }
